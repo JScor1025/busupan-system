@@ -86,7 +86,7 @@ const EMS_STATUS: Record<string, StatusConfig> = {
 }
 
 interface StatusBadgeProps {
-  status: string
+  status: string | null
   type?: 'product' | 'ems'
   className?: string
 }
