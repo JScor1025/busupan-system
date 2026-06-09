@@ -19,7 +19,8 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           ref={ref}
           id={id}
           className={cn(
-            'h-9 w-full rounded-lg border border-[var(--input)] bg-[var(--card)] px-3 text-sm',
+            'h-10 px-4 w-full rounded-lg border border-[var(--input)] bg-[var(--card)] text-sm',
+            'md:h-9 md:px-3',
             'text-[var(--foreground)] placeholder:text-[var(--muted-foreground)]',
             'focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent',
             'disabled:opacity-50 disabled:cursor-not-allowed',

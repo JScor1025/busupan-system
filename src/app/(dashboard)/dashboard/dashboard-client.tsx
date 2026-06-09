@@ -25,9 +25,9 @@ function StatCard({
   return (
     <div className={`rounded-2xl p-4 border-0 shadow-lg ${color || 'bg-[var(--card)]'}`}>
       {Icon && <Icon className="h-4 w-4 mb-2 opacity-80" />}
-      <p className="text-xs font-medium opacity-75">{label}</p>
-      <p className="mt-1 text-xl font-bold tracking-tight">{value}</p>
-      {sub && <p className="mt-0.5 text-xs opacity-60">{sub}</p>}
+      <p className="text-sm font-medium opacity-75 md:text-xs">{label}</p>
+      <p className="mt-1 text-2xl font-bold tracking-tight md:text-xl">{value}</p>
+      {sub && <p className="mt-0.5 text-sm opacity-60 md:text-xs">{sub}</p>}
     </div>
   )
 }
@@ -42,8 +42,8 @@ function InventoryChip({
       <div className="group flex items-center gap-2.5 rounded-xl border border-[var(--border)] bg-[var(--card)] px-3 py-2.5 hover:border-[var(--primary)] hover:bg-[var(--muted)] transition-all cursor-pointer">
         <StatusBadge status={statusKey} className="shrink-0" />
         <div className="min-w-0">
-          <p className="text-xs text-[var(--muted-foreground)] truncate">{label}</p>
-          <p className="text-base font-bold leading-tight">{value}</p>
+          <p className="text-sm text-[var(--muted-foreground)] truncate md:text-xs">{label}</p>
+          <p className="text-lg font-bold leading-tight md:text-base">{value}</p>
         </div>
       </div>
     </Link>
